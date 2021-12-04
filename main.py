@@ -33,3 +33,4 @@ for carregar in range(0,2):
 
 system("cls")
 print(f"A senha criada foi: {senha}\n")
+system("pause")
