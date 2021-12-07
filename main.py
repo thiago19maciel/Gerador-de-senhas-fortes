@@ -12,11 +12,12 @@ senha = ""
 
 system("cls")
 print("\nBem vindo ao gerador de senhas\n")
+
 tamanho_da_senha = int(input("Digite o tamanho da senha desejada: "))
 
 for i in range(0,tamanho_da_senha):
     while True:
-        tipo = randint(0,3)
+        tipo = randint(0,len(tipos)-1)
         posicao = randint(0,len(tipos[tipo])-1)
         caractere = tipos[tipo][posicao]
         if not caractere in senha:
